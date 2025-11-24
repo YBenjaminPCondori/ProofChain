@@ -1,0 +1,31 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "proofchain"
+version = "1.0.0"
+description = "Decentralized hate crime reporting platform on Algorand"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "algokit-utils>=2.0.0",
+    "py-algorand-sdk>=2.0.0",
+    "pyteal>=0.20.0",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black>=22.0.0",
+    "ruff>=0.1.0",
+]
+
+[tool.black]
+line-length = 100
+target-version = ['py310']
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"

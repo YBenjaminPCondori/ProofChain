@@ -1,0 +1,25 @@
+[project]
+name = "proofchain"
+description = "Decentralized hate crime reporting platform on Algorand"
+version = "1.0.0"
+
+[project.contracts]
+proofchain = { name = "ProofChain", description = "Hate incident reporting smart contract" }
+
+[project.networks.localnet]
+algod_token = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+algod_address = "http://localhost:4001"
+kmd_token = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+kmd_address = "http://localhost:4002"
+
+[project.networks.testnet]
+algod_token = ""
+algod_address = "https://testnet-api.algonode.cloud"
+kmd_token = ""
+kmd_address = ""
+
+[project.networks.mainnet]
+algod_token = ""
+algod_address = "https://mainnet-api.algonode.cloud"
+kmd_token = ""
+kmd_address = ""
